@@ -1,0 +1,33 @@
+.App {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.Pictures {
+  margin: 10px;
+}
+
+.Pictures img {
+  width: 200px;
+}
+/* img {
+  margin: 5px;
+} */
+
+.Board {
+  width: 536px;
+  height: 1089px;
+  border: 2px solid black;
+  background-image: url(./images/Dukke.png);
+  margin: 5px;
+  position: relative;
+}
+.Board img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  width: 536px;
+}
