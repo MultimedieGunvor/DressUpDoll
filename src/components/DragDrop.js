@@ -46,6 +46,13 @@ function DragDrop() {
     const pictureList = PictureList.filter((picture) => id === picture.id);
     setBoard((board) => [...board, pictureList[0]]);
   };
+
+
+  // Fjerne-funktion skal laves her.
+  function reset () { 
+    console.log(board);
+  }
+
   return (
     <>
       <div className="Board" ref={drop}>
@@ -54,6 +61,7 @@ function DragDrop() {
         })}
       </div>
       <div className="Pictures">
+      <button onClick={reset}>Reset</button>
         {PictureList.map((picture) => {
           return <Picture url={picture.url} id={picture.id} />;
         })}
